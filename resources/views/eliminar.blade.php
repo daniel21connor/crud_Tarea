@@ -1,4 +1,4 @@
-@extends('layout/plantilla')
+@extends('plantilla')
 
 @section("tituloPagina", "Crear un nuevo registro")
 
