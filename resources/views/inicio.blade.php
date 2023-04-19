@@ -4,7 +4,7 @@
 @section('contenido')
 
     <div class="card">
-        <h5 class="card-header">CRUD con laravel 8 y MySQL</h5>
+        <h5 class="card-header">Ingeneria en Sistemas</h5>
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-12">

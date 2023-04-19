@@ -1,18 +1,18 @@
 <?php
 
 namespace Database\Seeders;
-
+use App\Models\Personas;
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class PersonasSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
     public function run()
     {
-        $this->call(PersonasSeeder::class);
+        Personas::factory(10)->create();
     }
 }

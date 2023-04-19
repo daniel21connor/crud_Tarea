@@ -11,21 +11,13 @@
                 @csrf
                 @method("PUT")
                 <label for="">Apellido paterno</label>
-                <label>
-                    <input type="text" name="paterno" class="form-control" required value="{{$personas->paterno}}">
-                </label>
+                <input type="text" name="paterno" class="form-control" required value="{{$personas->paterno}}">
                 <label for="">Apellido materno</label>
-                <label>
-                    <input type="text" name="materno" class="form-control" required value="{{$personas->materno}}">
-                </label>
+                <input type="text" name="materno" class="form-control" required value="{{$personas->materno}}">
                 <label for="">Nombre</label>
-                <label>
-                    <input type="text" name="nombre" class="form-control" required value="{{$personas->nombre}}">
-                </label>
+                <input type="text" name="nombre" class="form-control" required value="{{$personas->nombre}}">
                 <label for="">Fecha de nacimiento</label>
-                <label>
-                    <input type="date" name="fecha_nacimiento" class="form-control" required value="{{$personas->fecha_nacimiento}}">
-                </label>
+                <input type="date" name="fecha_nacimiento" class="form-control" required value="{{$personas->fecha_nacimiento}}">
                 <br>
                 <a href="{{ route("personas.index") }}" class="btn btn-info" >
                     <span class="fas fa-undo-alt"></span> Regresar
@@ -35,6 +27,7 @@
                 </button>
 
             </form>
+            </p>
             </p>
 
         </div>
