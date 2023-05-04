@@ -4,6 +4,10 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use App\Models\Camion;
+use App\Models\Transporte;
+use App\Models\Personas;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -11,8 +15,14 @@ class DatabaseSeeder extends Seeder
      *
      * @return void
      */
-    public function run()
+        public function run(): void
     {
-        $this->call(PersonasSeeder::class);
+
+        Transporte::factory(100)->create();
+        Camion::factory(100)->create();
+        Personas::factory(100)->create();
+
     }
+
+
 }
