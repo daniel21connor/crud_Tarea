@@ -5,10 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Transporte extends Model
+class mercancia extends Model
 {
     use HasFactory;
-    public function camiones(){
-        return $this->hasMany('App\Models\camion');
+    public function tipo(){
+
+        return $this->belongsTo('App\Models\tipo_mercancia');
     }
 }

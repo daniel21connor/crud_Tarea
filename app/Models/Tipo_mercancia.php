@@ -5,10 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Transporte extends Model
+class Tipo_mercancia extends Model
 {
     use HasFactory;
-    public function camiones(){
-        return $this->hasMany('App\Models\camion');
+
+
+    public function mercancia (){
+
+        $mercancia =mercancia::where('tipo_mercancias_id',$this->id)->first();
+
     }
 }
