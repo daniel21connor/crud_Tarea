@@ -12,7 +12,6 @@ class Tipo_mercancia extends Model
 
     public function mercancia (){
 
-        $mercancia =mercancia::where('tipo_mercancias_id',$this->id)->first();
-
+       return $this->hasOne('App\Models\mercancia');
     }
 }

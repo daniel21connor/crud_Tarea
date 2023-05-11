@@ -9,6 +9,6 @@ class Camion extends Model
 {
     use HasFactory;
     public function transporte(){
-        return $this->belongsTo('App\Models\transporte');
+        return $this->belongsTo('App\Models\Transporte');
     }
 }
