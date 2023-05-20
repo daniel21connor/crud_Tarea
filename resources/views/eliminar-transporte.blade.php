@@ -1,4 +1,4 @@
-@extends('plantilla')
+@extends('transporte')
 
 @section("tituloPagina", "eliminar un registro")
 

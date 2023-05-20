@@ -4,13 +4,20 @@
 @section('contenido')
 
     <div class="card">
-        <h5 class="card-header">Ingeneria en Sistemas</h5>
+        <h5 class="card-header">CRUD con laravel 8 y MySQL</h5>
         <div class="card-body">
             <div class="row">
                 <div class="col-sm-12">
-                    @if ($mensaje = Session::get('success'))
-                        <div class="alert alert-success" role="alert">
-                            {{ $mensaje }}
+
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if (session('error'))
+                        <div class="alert alert-danger">
+                            {{ session('error') }}
                         </div>
                     @endif
 

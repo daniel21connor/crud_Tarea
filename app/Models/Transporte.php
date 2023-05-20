@@ -11,4 +11,5 @@ class Transporte extends Model
     public function camiones(){
         return $this->hasMany('App\Models\camion');
     }
+
 }
