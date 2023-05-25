@@ -40,3 +40,4 @@ Route::put('/updatec/{id}', [\App\Http\Controllers\CamionController::class, 'upd
 Route::get('/showc/{id}', [\App\Http\Controllers\CamionController::class, 'showc'])->name('camiones.showc');
 Route::delete('/destroyc/{id}', [\App\Http\Controllers\CamionController::class, 'destroyc'])->name('camiones.destroyc');
 Route::post('/camiones', [\App\Http\Controllers\CamionController::class, 'store'])->name('camiones.store');
+Route::get('/indexe', [\App\Http\Controllers\ErrorController::class, 'indexe'])->name('error.indexe');
